@@ -303,4 +303,5 @@ This project demonstrates:
 
 ## License
 
-MIT
+This project is own by Shreya Chowdary Chennupati, and Velaga Bhanu Prakash
+Open Contributions are welcomed.
