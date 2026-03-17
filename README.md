@@ -304,4 +304,4 @@ This project demonstrates:
 ## License
 
 This project is own by Shreya Chowdary Chennupati, and Velaga Bhanu Prakash
-Open Contributions are welcomed.
+- Open Contributions are welcomed.
