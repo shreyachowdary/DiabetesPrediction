@@ -1,0 +1,29 @@
+# Core ML & Data
+scikit-learn>=1.3.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Genetic Algorithm
+deap>=1.4.0
+
+# API & Server
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# Model persistence
+joblib>=1.3.0
+
+# Validation & types
+pydantic>=2.5.0
+
+# Optional: analysis (for notebooks)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Optional: desktop launcher
+# pywebview>=4.0
+
+# Testing
+pytest>=7.0.0
+

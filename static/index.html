@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction | GA-Based ML</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Diabetes Prediction</h1>
+            <p class="subtitle">Genetic Algorithm Feature Selection + Machine Learning</p>
+        </header>
+
+        <main>
+            <section class="card form-section">
+                <h2>Enter Health Metrics</h2>
+                <form id="predict-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="Pregnancies">Pregnancies</label>
+                            <input type="number" id="Pregnancies" name="Pregnancies" min="0" max="20" value="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Glucose">Glucose (mg/dL)</label>
+                            <input type="number" id="Glucose" name="Glucose" min="0" max="300" step="0.1" value="120" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="BloodPressure">Blood Pressure (mm Hg)</label>
+                            <input type="number" id="BloodPressure" name="BloodPressure" min="0" max="200" step="0.1" value="70" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="SkinThickness">Skin Thickness (mm)</label>
+                            <input type="number" id="SkinThickness" name="SkinThickness" min="0" max="100" step="0.1" value="20" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Insulin">Insulin (μU/mL)</label>
+                            <input type="number" id="Insulin" name="Insulin" min="0" max="900" step="0.1" value="80" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="BMI">BMI</label>
+                            <input type="number" id="BMI" name="BMI" min="0" max="70" step="0.1" value="25" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="DiabetesPedigreeFunction">Diabetes Pedigree Function</label>
+                            <input type="number" id="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction" min="0" max="3" step="0.01" value="0.5" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Age">Age (years)</label>
+                            <input type="number" id="Age" name="Age" min="0" max="120" value="30" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary" id="submit-btn">Predict</button>
+                </form>
+            </section>
+
+            <section class="card result-section" id="result-section" style="display: none;">
+                <h2>Prediction Result</h2>
+                <div id="result-content"></div>
+            </section>
+
+            <section class="card info-section">
+                <h2>Model Information</h2>
+                <div id="model-info-content">
+                    <p class="loading">Loading model info...</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Built with FastAPI, Scikit-learn & DEAP | Pima Indians Diabetes Dataset</p>
+        </footer>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
