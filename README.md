@@ -151,24 +151,24 @@ diabetes-ga-prediction/
 cd "Diabetes Prediction"
 python -m venv venv
 venv\Scripts\activate   # Windows
-# source venv/bin/activate  # Linux/Mac
+source venv/bin/activate  # Linux/MacOS
 
 pip install -r requirements.txt   # Windows
-pip3 install -r requirements.txt  # Linux/Mac
+pip3 install -r requirements.txt  # Linux/MacOS
 ```
 
 ### 2. Download Dataset
 
 ```bash
 python scripts/download_data.py    # Windows
-python3 scripts/download_data.py   # Linux/Mac
+python3 scripts/download_data.py   # Linux/MacOS
 ```
 
 ### 3. Train Models
 
 ```bash
 python scripts/run_training.py    # Windows
-python3 scripts/run_training.py   # Linux/Mac
+python3 scripts/run_training.py   # Linux/MacOS
 ```
 
 This will:
@@ -188,7 +188,10 @@ Opens `http://127.0.0.1:8000` in your browser.
 **Option B – Desktop-style window**
 ```bash
 pip install pywebview
-python run_desktop.py
+python run_desktop.py    # Windows
+
+pip3 install pywebview
+python3 run_desktop.py   # Linux/MacOS
 ```
 Opens the app in a native window (no browser chrome).
 
