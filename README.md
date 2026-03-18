@@ -153,19 +153,22 @@ python -m venv venv
 venv\Scripts\activate   # Windows
 # source venv/bin/activate  # Linux/Mac
 
-pip install -r requirements.txt
+pip install -r requirements.txt   # Windows
+pip3 install -r requirements.txt  # Linux/Mac
 ```
 
 ### 2. Download Dataset
 
 ```bash
-python scripts/download_data.py
+python scripts/download_data.py    # Windows
+python3 scripts/download_data.py   # Linux/Mac
 ```
 
 ### 3. Train Models
 
 ```bash
-python scripts/run_training.py
+python scripts/run_training.py    # Windows
+python3 scripts/run_training.py   # Linux/Mac
 ```
 
 This will:
